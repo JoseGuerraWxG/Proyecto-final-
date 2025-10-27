@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+body {
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255); 
+    color: black;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: cornflowerblue; 
+    color: white; 
+    text-align: center; 
+    padding: 2rem 1rem;
+}
+
+.formulario{
+    background-color: rgb(145, 4, 4);
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+ }
+
+ .formulario input [type="text"],
+ .formulario input [type="email"],
+ .formulario input [type="password"],
+ .formulario select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+ }
+
+.formulario input:focus,
+.formulario select:focus{ 
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 4px rgba(0, 119, 183, 0.4);
+}
+ 
+.grupo-opciones{
+    margin-bottom: 1rem;
+}
+
+.grupo-opciones p{
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+ 
+.grupo-opciones label {
+    display: block;
+    font-weight: normal;
+    margin-bottom: 0.3rem;
+}
+
+.formulario button {
+    width: 100%;
+    background-color: blanchedalmond;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button :hover {
+   background-color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(150, 108, 108);
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+section {
+    background-color: rgb(243, 170, 170);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(236, 159, 159, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+/* Títulos dentro de section */
+section h2 {
+    color: #00a6ff;
+    margin-bottom: 1rem;
+}
+
+/* Artículos */
+article {
+    margin-bottom: 1rem;
+    border-left: 4px solid #7c0000;
+    padding-left: 1rem;
+}
+
+/* Artículos títulos */
+article h3 {
+    color: #7998c0;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Aside */
+aside {
+    background-color: #c0a076;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
+}
+
+aside h2 {
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    margin-bottom: 0.5rem;
+}
+
+aside ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    text-decoration: underline;
+}
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        order: -1; /* el aside se muestra arriba en pantallas pequeñas */
+    }
+}
